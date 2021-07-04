@@ -1,0 +1,32 @@
+.list {
+  padding: 2rem;
+}
+
+.page__p {
+  padding: 0 2rem;
+}
+
+.list__item {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+.list__item__icon {
+  width: 70px;
+  height: 70px;
+}
+.list__item__content {
+  margin-left: 2rem;
+  text-align: start;
+}
+
+.list__item__header {
+  margin-bottom: 0rem;
+}
+
+.list__item__desc {
+  margin-top: 1rem;
+  text-align: justify;
+}
