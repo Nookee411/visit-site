@@ -7,12 +7,12 @@
 
 .profile-page__image-container {
   flex: 0 0 40%;
-  margin: 5%;
+  margin: 0 7% 7% 7%;
   display: flex;
   align-items: center;
   /* justify-content: space-around; */
   overflow: hidden;
-  height: 50%;
+  height: 600px;
   border-radius: 10px;
 }
 
@@ -21,22 +21,27 @@
   height: auto;
 }
 .profile-page__info {
-  padding: 10%;
+  padding: 50px;
   text-align: center;
 }
-.profile-page__info h1 {
+.profile-page__info h2 {
   margin-bottom: 10px;
-  text-transform: uppercase;
+  /* font-size: 38px; */
+  /* font-weight: 600; */
+  /* font-family: "Roboto", Arial, sans-serif; */
+  /* text-transform: uppercase; */
 }
-.profile-page h2 {
+.profile-page h3 {
   text-transform: lowercase;
   color: grey;
   font-weight: 300;
-  font-size: 1rem;
+
+  font-size: 14px;
 }
 .profile-page__info p {
   max-width: 400px;
-  font-size: 1.3rem;
+  font-size: 18px;
+  font-weight: 300;
 }
 .profile-page__info span {
   margin: 1rem auto;
@@ -49,6 +54,9 @@
 @media (max-width: 767px) {
   .profile-page {
     flex-flow: column nowrap;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+  }
+  .profile-page__info h2 {
+    font-size: 30px;
   }
 }

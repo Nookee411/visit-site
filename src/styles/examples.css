@@ -4,12 +4,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1.5rem;
+  padding: 20px 1.5rem;
   background-color: white;
   border: none;
   border-bottom: 1px solid #ddd;
-  text-transform: lowercase;
-  font-weight: 300;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .post__content {
@@ -25,13 +25,13 @@
   background-color: #ddd;
 }
 
-.active span,
-.active span::after {
+.active .post__expander__icon,
+.active .post__expander__icon::after {
   transform: rotate(135deg);
 }
 
-.post__expander > span,
-.post__expander > span::after {
+.post__expander > .post__expander__icon,
+.post__expander > .post__expander__icon::after {
   /* top: 10px; */
   position: relative;
   display: block;
@@ -41,7 +41,7 @@
   transition-duration: 500ms;
 }
 
-.post__expander > span::after {
+.post__expander > .post__expander__icon::after {
   top: 0;
   transform: rotate(90deg);
   content: "";

@@ -17,14 +17,28 @@
   text-align: center;
 }
 
+.page__p {
+  font-size: 22px;
+  font-weight: 300;
+  margin: 0 15px;
+}
+
 .page__header {
-  text-transform: uppercase;
-  margin: 2rem 0;
+  /* text-transform: uppercase; */
+  font-size: 38px;
+  line-height: 1.23;
+  margin-bottom: 50px 0;
+  font-weight: 600;
+  margin-bottom: 40px;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 @media (max-width: 768px) {
   .page__wrapper {
     width: 100%;
+  }
+  .page__header {
+    font-size: 30px;
   }
 }
 

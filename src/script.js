@@ -1,5 +1,22 @@
-let link = document.querySelector(".intro-page__nav");
+import "./styles/contacts.css";
+import "./styles/examples.css";
+import "./styles/intro-page.css";
+import "./styles/list.css";
+import "./styles/page.css";
+import "./styles/profile-page.css";
+import "./images/ann-large.jpeg";
+import "./images/ann-med.jpeg";
+import "./images/ann-small.jpeg";
+import "./images/book.svg";
+import "./images/brain.svg";
+import "./images/cafe_man.svg";
+import "./images/EktVNDbYSSg-01.jpg";
+import "./images/mailing.svg";
+import "./images/money.svg";
+import "./images/VK.com-logo.svg";
+import "./images/writing.ico";
 
+let link = document.querySelector(".intro-page__nav");
 let animationTime = 1500;
 
 link.style.transitionDuration = `${animationTime}ms`;
@@ -9,14 +26,11 @@ setInterval(() => {
 
 let posts = document.getElementsByClassName("post");
 
-for (let post of posts) {
-  let expandButton = post.querySelector(".post__expander");
-  let content = post.querySelector(".post__content");
-  let cross = post.querySelector(
-    ".post__expander span,.post__expander span:after"
-  );
-  if (expandButton.tagName === "BUTTON") {
-    expandButton.addEventListener("click", function (e) {
+Array.from(posts).forEach((element, index) => {
+  let content = element.querySelector(".post__content");
+  let expandButton = element
+    .querySelector(".post__expander")
+    .addEventListener("click", function (e) {
       this.classList.toggle("active");
       if (content.style.maxHeight) {
         content.style.maxHeight = null;
@@ -24,5 +38,4 @@ for (let post of posts) {
         content.style.maxHeight = content.scrollHeight + "px";
       }
     });
-  }
-}
+});
